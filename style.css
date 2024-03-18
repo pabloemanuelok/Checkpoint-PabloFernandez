@@ -1,13 +1,221 @@
 :root {
-    --color1 : #fff;
-    --color2 : #fff;
-    --color3 : #fff;
-    --color4 : #fff;
+    --Rojo : red;
+    --Negro : black;
+    --Gris : rgb(187, 184, 184);
+    --Blanco : white;
 }
 
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    outline: 1px solid rebeccapurple;
+    /* outline: 1px solid rebeccapurple; */
+}
+
+/* header */
+
+header {
+    width: 100%;
+    height: 25vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header div {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    font-size: 3rem;
+    text-align: center;
+    text-shadow: 2px 2px 4px red;
+    width: 50%;
+}
+
+header img {
+    width: 15vh;
+    height: 100%;
+}
+
+header nav {
+    background-color: black;
+    border-top: 2px solid red;
+    border-bottom: 2px solid red;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 5px;
+}
+
+header nav a {
+    font-size: small;
+    color: white;
+    border: 1px solid white;
+    border-radius: 30px;
+    padding: 3px;
+    text-decoration: none;
+    text-shadow: 1px 1px 2px red;
+    box-shadow: 1px 1px 2px 1px white;
+}
+
+header div {
+    width: 100%;
+    
+}
+
+/* main */
+
+main {
+    width: 100%;
+    min-height: 65vh;
+    background-image: url(./assets/fondo.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.section1 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.section1 h2 {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+
+.cardContainer {
+    gap: 15px;
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.card {
+    width: 200px;
+    height: 180px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+}
+
+.card img {
+    width: 100%;
+    height: 170px;
+}
+
+.card h3 {
+    width: 100%;
+    background-color: var(--Gris);
+    text-align: center;
+}
+
+.section2 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.section2 h2 {
+    width: 100%;
+    text-align: center;
+}
+
+.plataformContainer {
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    padding: 10px;
+    gap: 10%;
+}
+
+.cardPlataform {
+    background-color: var(--Gris); 
+    border: 1px solid black;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    
+}
+
+.cardPlataform ol {
+    width: 100%;
+    justify-content: left;
+    list-style: inside;
+    list-style-type: decimal
+}
+
+table, tr, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    background-color: white;
+    text-align: center;
+}
+
+table {
+    width: 90%;
+    height: 90%;
+}
+
+/* footer */
+
+footer {
+    width: 100%;
+    height: 10vh;
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    align-items: center;
+    
+}
+
+
+.form fieldset {
+    padding: 10px;
+}
+
+@media screen and (max-width: 768px) {
+
+    header nav {
+        justify-content: space-between;
+    }
+
+
+    .section1 {
+        padding: 1rem;
+    }
+
+    .section2 {
+        padding: 1rem;
+    }
+
+    .cardContainer {
+        flex-wrap: wrap;
+    }
+
+    .plataformContainer {
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 1rem;
+        height: 20vh;
+        padding: 10px;
+    }
 }

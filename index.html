@@ -3,11 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="shortcut icon" href="./assets/logo2.png" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css">
+    <title>Todo Anime</title>
 </head>
 <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+    <header>
+        <div>
+            <img src="./assets/logo1.png" alt="Logo de Dragon Ball Z">
+            <h1>Todo Anime</h1>
+            <img src="./assets/logo2.png" alt="Logo de Naruto">
+        </div>
+        <nav>
+            <a href="#">Principal</a>
+            <a href="./index.html">Favoritos</a>
+            <a href="./index.html">Contacto</a>
+        </nav>
+    </header>
+    <main>
+        <section class="section1">
+            <h2>Recomendados</h2>
+            <div class="cardContainer">
+            <article class="card">
+                <img src="./assets/onePiece.jpg" alt="Imagen de la serie de One Peace">
+                <h3>One Piece</h3>
+            </article>
+            <article class="card">
+                <img src="./assets/deathNote.jpg" alt="Imagen de la serie de Death Note">
+                <h3>Death Note</h3>
+            </article>
+            <article class="card">
+                <img src="./assets/neon-genesis-evangelion-cosas-felices.jpg" alt="Imagen de la serie Evangelion">
+                <h3>Evangelion</h3>
+            </article>    
+            </div>
+        </section>
+        <section class="section2">
+                <h2>Plataformas para ver anime</h2>
+            <div class="plataformContainer">
+                <article class="cardPlataform">
+                    <ol>
+                        <li>Netflix</li>
+                        <li>Amazon Prime</li>
+                        <li>HBO Max</li>
+                        <li>Cruchyroll</li>
+                    </ol>
+                </article>
+                <article class="cardPlataform">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Plataforma</th>
+                                <th>Tarifa</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Netflix</td>
+                                <td>$180</td>
+                            </tr>
+                            <tr>
+                                <td>Amazon Prime</td>
+                                <td>$100</td>
+                            </tr>
+                            <tr>
+                                <td>HBO Max</td>
+                                <td>$150</td>
+                            </tr>
+                            <tr>
+                                <td>Cruchyroll</td>
+                                <td>$9.99</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </article>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div>
+            <p>2024 - Todos los derechos reservados</p>
+        </div>
+        <div class="form">
+            <form action="./show_data.html" method="get">
+                <fieldset>
+                    <legend>subscribe</legend>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email">
+                    <button>Enviar</button>
+                </fieldset>
+            </form>
+        </div>
+        <div>
+            <p>Pablo Fernandez</p>
+        </div>
+    </footer>
 </body>
 </html>
