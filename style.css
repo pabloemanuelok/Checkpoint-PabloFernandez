@@ -1,0 +1,13 @@
+:root {
+    --color1 : #fff;
+    --color2 : #fff;
+    --color3 : #fff;
+    --color4 : #fff;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: 1px solid rebeccapurple;
+}
