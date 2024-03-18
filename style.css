@@ -142,6 +142,11 @@ main {
     gap: 10%;
 }
 
+.plataformContainer h2{
+    display: none;
+}
+
+
 .cardPlataform {
     background-color: var(--Gris); 
     border: 1px solid black;
